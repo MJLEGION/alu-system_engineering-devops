@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Define the server IP address
+SERVER_IP="your."5838-web-01"
+
+# Use ssh to connect to the server
+ssh -i ~/.ssh/school ubuntu@$SERVER_IP
+
