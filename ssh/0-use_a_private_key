@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Define the server IP address
 SERVER_IP="your."5838-web-01"
