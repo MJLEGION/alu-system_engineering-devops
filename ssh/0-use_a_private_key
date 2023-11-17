@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
+#Write a Bash script that uses ssh to connect to your server using the private key `~/.ssh/school` with the user `ubuntu`
 
-# Define the server IP address
-SERVER_IP="your."5838-web-01"
-
-# Use ssh to connect to the server
-ssh -i ~/.ssh/school ubuntu@$SERVER_IP
-
+ssh -i ~/.ssh/school ubuntu@52.90.220.89
