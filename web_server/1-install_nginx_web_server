@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
-# A script that installs nginx server on an ubuntu linux distro.
-# The installed server listens to port 80 (HTTP) for connection
-# And serves a default page index.html on the HTTP  GET request.
+# Install Nginx on Ubuntu
+sudo apt update
+sudo apt install nginx -y
+# Allow Nginx to listen on port 80
+sudo ufw allow 'Nginx HTTP'
+# Create a custom HTML file with the string Holberton School
+echo "<html><head><title>Nginx Test</title></head><body><h1>Holberton School for the win!</h1></body></html>" | sudo tee /var/www/html/index.nginx-debian.html
+# Restart Nginx using service command
+sudo service nginx restart
 
-sudo apt-get update -y
-
-sudo apt-get install nginx -y
-
-echo 'Hello World!' > /var/www/html/index.html
-
-service nginx restart
